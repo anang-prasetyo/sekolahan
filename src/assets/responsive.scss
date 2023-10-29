@@ -1,0 +1,50 @@
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+  #img{
+    &Extrakulikuler{
+      height: 15rem;
+    }
+    &KegiatanExtrakulikuler{
+      height: 15rem !important;
+    }
+    &Sambutan{
+      height: 20rem;
+    }
+  }
+  #tabMenuExtrakulikuler{
+    font-size: .75rem;
+  }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+  
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+  #navMenuDesktop{
+    display: none !important;
+  }
+}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  #imgExtrakulikuler{
+    height: 10rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  #navMenuMobile{
+    display: none !important;
+  }
+
+}
