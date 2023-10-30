@@ -2,7 +2,7 @@
   <footer class="mt-5 bg-primaryku text-white">
     <div class="container pt-5 pb-2">
       <div class="row m-0 d-flex align-items-center row-gap-4">
-        <div class="col-12 col-sm-4 d-flex flex-column gap-2 fs-xs2 align-items-center align-content-sm-start text-center text-sm-start">
+        <div class="col-12 col-sm-4 d-flex flex-column gap-2 fs-xs2 align-items-center align-items-sm-start text-center text-sm-start">
           <div class="" style="height: 10rem; width: 10rem;">
             <img src="../assets/img/smk 10 november sukodono sragen-logo.png" alt="" class="h-100">
           </div>

@@ -69,7 +69,10 @@
         <img src="../assets/img/1062.jpg" alt="" class="w-100">
       </div>
       <div class="bg-white border-2 border-white p-2" style="z-index: 2;">
-        <button class="btn-ku2 px-3 py-2"><span>Daftar</span></button>
+      <button class="btn-ku2 px-3 py-2 m-auto"><span>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZtRyCoa1-bWJzOFlT20hI7QxBi5hIlcNhnclZGCks5-8V-w/viewform?usp=sf_link" target=”_blank” class="text-decoration-none" style="color: inherit;">daftar</a>
+        </span>
+      </button>
       </div>
     </div>
   </section>

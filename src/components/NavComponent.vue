@@ -47,7 +47,9 @@
                 <RouterLink to="/" class="nav-link text-decoration-none" style="color: inherit;">Login</RouterLink>
               </li> -->
               <li class="nav-item w-100">
-                <div><button class="btn-ku2 px-3 py-2 m-auto"><span>Daftar</span></button></div>
+                <div><button class="btn-ku2 px-3 py-2 m-auto"><span>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZtRyCoa1-bWJzOFlT20hI7QxBi5hIlcNhnclZGCks5-8V-w/viewform?usp=sf_link" target=”_blank” class="text-decoration-none" style="color: inherit;">daftar</a>
+                </span></button></div>
               </li>
             </ul>
           </div>

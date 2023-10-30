@@ -26,7 +26,7 @@
             </li>
           </ul>
           <div class="text-center mt-3">
-            <button class="btn btn-primary rounded-0">Lihat lebih</button>
+            <button class="btn btn-primary rounded-0"><RouterLink to="/keahlian" class="dropdown-item text-decoration-none" style="color: inherit;">Lihat Lebih</RouterLink></button>
           </div>
         </div>
       </div>

@@ -103,8 +103,12 @@
 <script setup>
 import { useDatabase } from '../databases/db'
 import TabmenuComponent from '../components/TabmenuComponent.vue'
+import { onMounted } from 'vue'
 
 const { profilSekolah } = useDatabase()
+onMounted(() => {
+  window.scrollTo(0,0);
+})
 </script>
 
 <style lang="scss" scoped>
