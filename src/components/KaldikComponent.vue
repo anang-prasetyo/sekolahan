@@ -1,7 +1,7 @@
 <template>
   <section class="px-2 px-sm-0">
-    <div class="fs-3 fw-light text-capitalize"><span class="fw-bold text-uppercase">kalender</span> akademik 2023/2024</div>
-    <div class="p-1 py-2 d-flex gap-3">
+    <div class="fs-3 fw-light text-capitalize pb-2"><span class="fw-bold text-uppercase">kalender</span> akademik 2023/2024</div>
+    <div :class="jmlTampilBulan == 6 ? '' : 'd-none'" class="p-1 pb-2 d-flex gap-3">
       <button class="btn rounded-0 px-2" :class="pilihGanjilOrGenap === 'ganjil' ? 'border border-black' : ''" @click="isGanjilOrGenap = kalender.ganjil, pilihGanjilOrGenap = 'ganjil', toGanjilOrGenap = 6">Semester Ganjil</button>
       <button class="btn rounded-0 text-secondary px-2" :class="pilihGanjilOrGenap === 'genap' ? 'border border-black' : ''" @click="isGanjilOrGenap = kalender.genap, pilihGanjilOrGenap = 'genap', toGanjilOrGenap = 0">Semester Genap</button>
     </div>
@@ -141,7 +141,8 @@
 </template>
 
 <script setup>
-import { computed, onMounted, onUnmounted, ref } from "vue"
+import { onMounted, ref } from "vue"
+import { useBreakpoints } from '../databases/fungsi'
 
 const namaHari = ref(['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'])
 const namaBulan = ref(['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'])
@@ -329,31 +330,6 @@ const compare = ( a, b ) => {
 }
 
 
-function useBreakpoints() {
-  let windowWidth = ref(window.innerWidth)
-  
-  const onWidthChange = () => windowWidth.value = window.innerWidth
-  onMounted(() => window.addEventListener('resize', onWidthChange))
-  onUnmounted(() => window.removeEventListener('resize', onWidthChange))
-  
-  const type = computed(() => {
-    if (windowWidth.value < 550) return 'xs'
-    if (windowWidth.value >= 550 && windowWidth.value < 1200) return 'md'
-    if (windowWidth.value >= 1200) return 'lg'
-    return null; // This is an unreachable line, simply to keep eslint happy.
-  })
-  
-  const jmlTampilBulan = computed(() => {
-    if (windowWidth.value < 550) return 1
-    if (windowWidth.value >= 550 && windowWidth.value < 1200) return 6
-    if (windowWidth.value >= 1200) return 6
-    return null; // This is an unreachable line, simply to keep eslint happy.
-  })
-
-  const width = computed(() => windowWidth.value)
-
-  return { width, type, jmlTampilBulan }
-}
 const { width, type, jmlTampilBulan } = useBreakpoints()
 
 onMounted(() => {

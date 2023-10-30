@@ -13,21 +13,21 @@
     <div class="bg-primaryku px-4 my-5">
       <section class="py-5 p-sm-5 text-white">
         <div class="fs-3 fw-light text-capitalize text-center mb-4"><span class="fw-bold text-uppercase">Tahun ajaran</span> 2023/2024</div>
-        <div class="row m-0 text-center row-gap-4">
-          <div class="col-4 col-sm-2">
-            <div class="bg-primaryku-shades-10 p-3 py-sm-5 border border-2 border-white">
+        <div class="row m-0 text-center row-gap-1 row-gap-sm-4">
+          <div class="col-4 p-1 p-sm-2 col-sm-2">
+            <div class="bg-primaryku-shades-10 p-1 p-sm-3 py-sm-5 border border-2 border-white">
               <div>Guru</div>
               <div class="display-2">{{dbGuruStaf.length}}</div>
             </div>
           </div>
-          <div class="col-4 col-sm-2">
-            <div class="bg-primaryku-shades-10 p-3 py-sm-5 border border-2 border-white text-white">
+          <div class="col-4 p-1 p-sm-2 col-sm-2">
+            <div class="bg-primaryku-shades-10 p-1 p-sm-3 py-sm-5 border border-2 border-white text-white">
               <div>Peserta didik</div>
               <div class="display-2">100</div>
             </div>
           </div>
-          <div v-for="k, i in profilSekolah.keahlian" :key="i" class="col-4 col-sm-2">
-            <div class="bg-primaryku-shades-10 p-3 py-sm-5 border border-2 border-white text-white">
+          <div v-for="k, i in profilSekolah.keahlian" :key="i" class="col-4 p-1 p-sm-2 col-sm-2">
+            <div class="bg-primaryku-shades-10 p-1 p-sm-3 py-sm-5 border border-2 border-white text-white">
               <div>{{k.nama}}</div>
               <div class="display-2">25</div>
             </div>
@@ -35,17 +35,17 @@
         </div>
       </section>
     </div>
-    <section class="container">
+    <section class="container px-0 px-sm-2">
       <section class="mt-5">
-        <div class="row m-0 row-gap-4">
-          <div class="col-12">
+        <div class="row m-0 row-gap-1 row-gap-sm-4">
+          <div class="col-12 px-1 px-sm-2">
             <div class="project-thumb" style="height: 15rem;">
               <img src="../assets/img/Gedung-Sekolah3.jpg">
             </div>
           </div>
-          <div v-for="i in 3" :key="i" class="col-4">
-            <div class="project-thumb" style="height: 15rem;">
-              <img :src="'src/assets/img/Gedung-Sekolah-dalam'+i+'.jpg'">
+          <div v-for="i in 3" :key="i" class="col-4 px-1 px-sm-2">
+            <div id="imgGedungSekolahDalam" class="project-thumb" style="height: 15rem;">
+              <img :src="'https://raw.githubusercontent.com/anang-prasetyo/sekolahan/master/src/assets/img/Gedung-Sekolah-dalam'+i+'.jpg'">
             </div>
           </div>
         </div>

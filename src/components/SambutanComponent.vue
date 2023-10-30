@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="col-2 col-sm-1 bg-danger-subtle p-0">
-        <div class="" style="height: 100%; overflow: hidden; background: url('src/assets/img/1062.jpg') no-repeat center center; background-size: cover;">
+        <div class="" style="height: 100%; overflow: hidden; background: url('https://raw.githubusercontent.com/anang-prasetyo/sekolahan/master/src/assets/img/1062.jpg') no-repeat center center; background-size: cover;">
         </div>
       </div>
     </div>

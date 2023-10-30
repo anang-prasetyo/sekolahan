@@ -28,18 +28,18 @@
       <section class="mt-5 px-2">
         <div class="fs-3 fw-light text-capitalize">kegiatan <span class="fw-bold text-uppercase">{{profilSekolah.extrakulikuler[0].nama}}</span></div>
         <div class="row m-0 row-gap-4 mt-3">
-          <div v-for="ek, eki in profilSekolah.extrakulikuler[0].kegiatan" :key="eki" class="col-6">
+          <div v-for="ek, eki in profilSekolah.extrakulikuler[0].kegiatan" :key="eki" class="col-12 col-sm-6 px-0 px-sm-2">
             <div class="bg-primaryku-shades-1">
               <div id="imgKegiatanExtrakulikuler" class="project-thumb" style="height: 20rem;">
-                <img :src="'src/assets/img/'+ profilSekolah.extrakulikuler[0].nama.toLowerCase() +'-kegiatan-'+ (eki+1) +'.jpg'">
+                <img :src="'https://raw.githubusercontent.com/anang-prasetyo/sekolahan/master/src/assets/img/'+ profilSekolah.extrakulikuler[0].nama.toLowerCase() +'-kegiatan-'+ (eki+1) +'.jpg'">
               </div>
               <div class="p-3">{{ek}}</div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-sm-6 px-0 px-sm-2">
             <div class="bg-primaryku-shades-1">
               <div id="imgKegiatanExtrakulikuler" class="project-thumb" style="height: 20rem;">
-                <img :src="'src/assets/img/'+ profilSekolah.extrakulikuler[0].nama.toLowerCase() +'-kegiatan-'+ (profilSekolah.extrakulikuler[0].kegiatan.length + 1) +'.jpg'">
+                <img :src="'https://raw.githubusercontent.com/anang-prasetyo/sekolahan/master/src/assets/img/'+ profilSekolah.extrakulikuler[0].nama.toLowerCase() +'-kegiatan-'+ (profilSekolah.extrakulikuler[0].kegiatan.length + 1) +'.jpg'">
               </div>
               <div class="p-3">Sanggar {{profilSekolah.extrakulikuler[0].nama}}</div>
             </div>

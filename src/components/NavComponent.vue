@@ -4,7 +4,9 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid gap-sm-5 row m-0 px-2 px-sm-0">
           <div class="d-flex gap-2 align-items-center col-10 col-sm-auto ps-0">
-            <div class="bg-white rounded-circle" style="height: 2rem; width: 2rem;"></div>
+            <div class="" style="height: 2rem; width: 2rem;">
+              <img src="../assets/img/smk 10 november sukodono sragen-logo.png" alt="" class="h-100">
+            </div>
             <RouterLink to="/" class="nav-link text-decoration-none" style="color: inherit;">{{namaSekolah}}</RouterLink>
           </div>
           <button id="navMenuMobile" class="btn col-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

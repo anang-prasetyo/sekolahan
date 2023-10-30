@@ -5,7 +5,7 @@
       <div v-for="e, i in extrakulikuler" :key="i" class="col-12 px-0 px-sm-2 col-sm-3">
         <div class="bg-primaryku-shades-1 px-3 py-3">
           <div id="imgExtrakulikuler" class="project-thumb">
-            <img :src="'src/assets/img/'+ e.nama.toLowerCase() +'.jpg'">
+            <img :src="'https://raw.githubusercontent.com/anang-prasetyo/sekolahan/master/src/assets/img/'+ e.nama.toLowerCase() +'.jpg'">
           </div>
           <div class="text-center mt-2 fs-3">{{e.nama}}</div>
           <ul class="list-unstyled mb-0 fs-xs2">

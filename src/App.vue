@@ -6,7 +6,11 @@ import FooterComponent from "./components/FooterComponent.vue";
 import { Vue3Lottie } from 'vue3-lottie'
 
 import AstronautJSON from './assets/animasi/join.json'
+import { useBreakpoints } from './databases/fungsi';
+
 const { profilSekolah } = useDatabase()
+const { jmlTampilBulan } = useBreakpoints()
+
 // const naik = () => {
 //   window.scrollTo(0,0);
 // }
@@ -18,7 +22,7 @@ const { profilSekolah } = useDatabase()
   </header>
 
   <div class="position-fixed text-center" style="bottom: 0%; right: 2%; z-index: 11;">
-    <Vue3Lottie :animationData="AstronautJSON" :height="200" :width="200" />
+    <Vue3Lottie :animationData="AstronautJSON" :height="jmlTampilBulan == 1 ? 100 : 200" :width="jmlTampilBulan == 1 ? 100 : 200" />
   </div>
     <!-- <i class="bi bi-arrow-up-square fs-3" @click="naik()" style="cursor: pointer;"></i> -->
     <!-- <div class="d-flex flex-column align-items-center">

@@ -10,9 +10,18 @@
     &Sambutan{
       height: 20rem;
     }
+    &GedungSekolahDalam{
+      height: 5rem !important;
+    }
+    &GuruStaf{
+      height: 10rem !important;
+    }
   }
   #tabMenuExtrakulikuler{
     font-size: .75rem;
+  }
+  #gmaps{
+    width: 100% !important;
   }
 }
 
