@@ -142,10 +142,10 @@
 
 <script setup>
 import { onMounted, ref } from "vue"
+import { useDatabase } from "../databases/db"
 import { useBreakpoints } from '../databases/fungsi'
 
-const namaHari = ref(['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'])
-const namaBulan = ref(['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'])
+const {namaHari,namaBulan} = useDatabase()
 
 const isGanjilOrGenap = ref()
 const toGanjilOrGenap = ref(6)

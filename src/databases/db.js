@@ -3,8 +3,12 @@ import { ref } from "vue";
 export function useDatabase() {
   const profilSekolah = ref({
     nama: 'SMK 10 NOVEMBER SUKODONO SRAGEN',
-    alamat: 'Kweni, RT 14, Pantirejo, Kec. Sukodono, Kabupaten Sragen, Jawa Tengah',
-    kepalaSekolah: 'Drs. Malika, S.Pd',
+    alamat: 'Jl. Raya Sukodono-Jatitengah KM 1, Kweni, RT 14, Pantirejo, Kec. Sukodono, Kabupaten Sragen, Jawa Tengah',
+    contact: {
+      phone: '08170610604',
+      email: 'smks10novembersukodono@gmail.com'
+    },
+    kepalaSekolah: 'S. Jadi, S.Pd., M.Pd.',
     nss: 1234,
     nds: 1234,
     nis: 1234,
@@ -63,45 +67,72 @@ export function useDatabase() {
 
   const dbGuruStaf = ref([
     {
-      nama: 'Drs. Malika, S.Pd',
-      jabatan: 'Kepala Sekolah'
+      nama: 'S. Jadi, S.Pd., M.Pd.',
+      jabatan: 'Kepala Sekolah',
+      isFoto: true
     },
     {
-      nama: 'Rizki Hidayat',
-      jabatan: 'Wakasek Kurikulum'
+      nama: 'Achmad Sajidan',
+      jabatan: 'Komite Sekolah',
+      isFoto: false
     },
     {
-      nama: 'Wawan Situmorang',
-      jabatan: 'Wakasek Kesiswaan'
+      nama: 'Basuki Andri Susanto, S.Pd., I.',
+      jabatan: 'Waka. Kesiswaan',
+      isFoto: true
     },
     {
-      nama: 'Dhani Rohayati',
-      jabatan: 'Kepala Tata Usaha'
+      nama: 'Nuryati, S.Pd., M.Pd.',
+      jabatan: 'Waka. Kurikulum',
+      isFoto: true
     },
     {
-      nama: 'Riska Rohmah',
-      jabatan: 'Ketua Koperasi'
-    },
-    {
-      nama: 'Meli Puspitasari',
-      jabatan: 'Bendahara'
-    },
-    {
-      nama: 'Suradi Utomo',
-      jabatan: 'Guru Olahraga'
-    },
-    {
-      nama: 'Gunawan Simanjuntak',
-      jabatan: 'Guru Bahasa Inggris'
-    },
-    {
-      nama: 'Suwito Mulyadi',
-      jabatan: 'Staf Kurikulum'
+      nama: 'Saniatul Munawaroh, S.H.',
+      jabatan: 'Guru Bimbingan Konseling',
+      isFoto: true
     }
   ])
 
+  const namaHari = ref(['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'])
+  const namaBulan = ref(['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'])
+
+  const dbPpdb = ref({
+    timeline: [
+      {
+        nama: 'pembukaan pendaftaran',
+        tanggalMulai: '2023-11-01T00:00:00',
+        tanggalSelesai: '2023-11-01T00:01:00',
+        isComplete: false
+      },
+      {
+        nama: 'masa pendaftaran',
+        tanggalMulai: '2023-11-01T00:00:00',
+        tanggalSelesai: '2024-01-31T23:59:00',
+        isComplete: false
+      },
+      {
+        nama: 'seleksi',
+        tanggalMulai: '2024-02-01T00:00:00',
+        tanggalSelesai: '2024-02-01T23:59:00',
+        isComplete: false
+      },
+      {
+        nama: 'pengumuman',
+        tanggalMulai: '2024-02-02T00:00:00',
+        tanggalSelesai: '2024-02-02T23:59:00',
+        isComplete: false
+      },
+      {
+        nama: 'daftar ulang',
+        tanggalMulai: '2024-02-03T00:00:00',
+        tanggalSelesai: '2024-02-07T23:59:00',
+        isComplete: false
+      }
+    ]
+  })
+
   
   return {
-    profilSekolah, profilYayasan, dbGuruStaf
+    profilSekolah, profilYayasan, dbGuruStaf, dbPpdb, namaHari, namaBulan
   }
 }

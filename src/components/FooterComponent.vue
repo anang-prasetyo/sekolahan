@@ -8,8 +8,8 @@
           </div>
           <div class="fs-3">{{profilSekolah.nama}}</div>
           <div>{{profilSekolah.alamat}}</div>
-          <div><i class="bi bi-envelope"></i> : info@smk10novembersragen.sch.id</div>
-          <div><i class="bi bi-telephone"></i> : (0271) 711876</div>
+          <div><i class="bi bi-envelope"></i> : {{profilSekolah.contact.email}}</div>
+          <div><i class="bi bi-telephone"></i> : {{profilSekolah.contact.phone}}</div>
           <div class="d-flex gap-3 fs-5 mt-3">
             <div><i class="bi bi-instagram"></i></div>
             <div><i class="bi bi-facebook"></i></div>

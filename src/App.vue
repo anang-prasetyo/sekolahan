@@ -22,7 +22,9 @@ const { jmlTampilBulan } = useBreakpoints()
   </header>
 
   <div class="position-fixed text-center" style="bottom: 0%; right: 2%; z-index: 11;">
-    <Vue3Lottie :animationData="AstronautJSON" :height="jmlTampilBulan == 1 ? 100 : 200" :width="jmlTampilBulan == 1 ? 100 : 200" />
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZtRyCoa1-bWJzOFlT20hI7QxBi5hIlcNhnclZGCks5-8V-w/viewform?usp=sf_link" target=”_blank” class="text-decoration-none" style="color: inherit;">
+      <Vue3Lottie :animationData="AstronautJSON" :height="jmlTampilBulan == 1 ? 100 : 200" :width="jmlTampilBulan == 1 ? 100 : 200" />
+    </a>
   </div>
     <!-- <i class="bi bi-arrow-up-square fs-3" @click="naik()" style="cursor: pointer;"></i> -->
     <!-- <div class="d-flex flex-column align-items-center">
