@@ -2,7 +2,7 @@
   <main>
     <section class="container mt-2">
       <profil-component :profil-sekolah='profilSekolah' :profil-yayasan='profilYayasan' class="mt-3"></profil-component>
-      <sejarah-component></sejarah-component>
+      <sejarah-component id="sejarahSekolah"></sejarah-component>
       <!-- <sambutan-component :profil-sekolah='profilSekolah'></sambutan-component> -->
       <visimisi-component></visimisi-component>
       <section class="mt-5">

@@ -9,9 +9,10 @@ import App from './App.vue'
 import router from './router'
 import Vue3Lottie from 'vue3-lottie'
 import Countdown from 'vue3-flip-countdown'
+import VueScrollTo from 'vue-scrollto'
 
 const app = createApp(App)
 
-app.use(router).use(Vue3Lottie).use(Countdown)
+app.use(router).use(Vue3Lottie).use(Countdown).use(VueScrollTo)
 
 app.mount('#app')

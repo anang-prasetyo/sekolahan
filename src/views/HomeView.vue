@@ -1,7 +1,7 @@
 <template>
   <main>
     <section class="container mt-2">
-      <hero-component :nama-sekolah='profilSekolah.nama'></hero-component>
+      <hero-component :profil-sekolah='profilSekolah'></hero-component>
       <ppdb-component></ppdb-component>
     </section>
     <div class="bg-primaryku px-4">

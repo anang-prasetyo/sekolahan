@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://anang-prasetyo.github.io/",
+  "homepage": "https://anang-prasetyo.github.io/",
   "name": "sekolahan",
   "version": "0.0.1",
   "private": true,
@@ -16,6 +16,7 @@
     "sass": "^1.69.4",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5",
+    "vue-scrollto": "^2.20.0",
     "vue3-flip-countdown": "^0.1.6",
     "vue3-lottie": "^3.2.0"
   },

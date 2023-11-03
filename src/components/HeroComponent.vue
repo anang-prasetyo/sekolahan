@@ -18,10 +18,9 @@
       <div class="p-sm-2 d-flex flex-column h-100 justify-content-center">
         <div class="fs-2 fw-bold mb-3" style="line-height: 2.5rem;">Religius, Kompeten, Produktif.</div>
         <div class="fs-xs2" style="text-align: justify;">
-          <div>{{namaSekolah}} merupakan Sekolah Menengah Kejuruan Berbasis Pesantren di bawah naungan Yayasan Al-Hamidiyyah Lasem. Yayasan Al-Hamidiyyah didirikan oleh Almarhum Abah Ahmad Thoyfoer bin Maftuchin beserta istri Ibu Muhimmah binti Fatchurrahman sekitar tahun 1980.</div>
-          <div class="mt-2">{{namaSekolah}} berdiri pada tahun 2012 dan memiliki 3 Kompetensi Keahlian yakni Farmasi Klinis & Komunitas, Asisten Keperawatan Keperawatan dan Desain Komunikasi Visual.</div>
+          <p>{{profilSekolah.nama}} berada di {{profilSekolah.alamat}}. Mulai berdiri pada tahun 2007 sampai saat ini 16 tahun sudah memiliki 4 cabang smk 10 november diantaranya <span class="text-uppercase">smk 10 november tambun</span>, <span class="text-uppercase">smk 10 november cibitung</span>, <span class="text-uppercase">smk 10 november kebumen</span>, dan <span class="text-uppercase">smk 10 november sukodono</span>. Untuk ajaran 2023/2024 {{profilSekolah.nama}} dipimpin oleh {{profilSekolah.kepalaSekolah}}.</p>
         </div>
-        <div class="mt-3 fs-xs2 text-secondary">Baca Selengkapnya ..</div>
+        <div class="mt-3 fs-xs2 text-secondary"><RouterLink to="/sekolah/#sejarahSekolah" class="dropdown-item text-decoration-none" style="color: inherit;">Baca Selengkapnya ...</RouterLink></div>
         <div class="mt-4">
           <button class="btn-ku2 px-3 py-2"><span>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZtRyCoa1-bWJzOFlT20hI7QxBi5hIlcNhnclZGCks5-8V-w/viewform?usp=sf_link" target=”_blank” class="text-decoration-none" style="color: inherit;">daftar</a>
@@ -35,7 +34,7 @@
 <script setup>
 
 defineProps({
-  namaSekolah: String
+  profilSekolah: Object
 })
 </script>
 

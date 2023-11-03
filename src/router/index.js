@@ -1,8 +1,30 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
+// const props = mergeProps({
+//   el1: String
+// })
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  props: {
+    el1: String,
+  },
+  setup(props) {
+    // setup() receives props as the first argument.
+    console.log(props)
+  },
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return {
+        el: to.hash,
+        behavior: "smooth",
+        top: 20,
+      };
+    }
+  },
   routes: [
     {
       path: '/',
@@ -21,6 +43,15 @@ const router = createRouter({
       path: '/sekolah',
       name: 'sekolah',
       component: () => import('../views/SekolahView.vue')
+    },
+    {
+      path: '/sekolah/sejarahSekolah',
+      name: 'sejarahSekolah',
+      component: () => import('../views/SekolahView.vue'),
+      children: [
+        { path: '', component: () => import('../components/SejarahComponent.vue') },
+      ],
+      props: true
     },
     {
       path: '/guru',

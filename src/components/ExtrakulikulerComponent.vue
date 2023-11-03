@@ -13,10 +13,10 @@
               <div><i class="bi bi-check-circle"></i></div>
               <div>{{ek}}</div>
             </li>
-            <li class="d-flex gap-3 border-bottom py-2">
+            <!-- <li class="d-flex gap-3 border-bottom py-2">
               <div><i class="bi bi-check-circle"></i></div>
               <div class="fw-bold">Ruangan {{e.nama}}</div>
-            </li>
+            </li> -->
           </ul>
           <div class="text-center mt-3">
             <button class="btn btn-primary rounded-0"><RouterLink to="/extrakulikuler" class="dropdown-item text-decoration-none" style="color: inherit;">Lihat Lebih</RouterLink></button>

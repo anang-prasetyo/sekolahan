@@ -4,19 +4,17 @@
     <div class="row m-0 fs-xs2 row-gap-3 mt-2">
       <div class="col-12 col-sm ps-sm-0">
         <div>VISI Sekolah</div>
-        <ol class="mb-0 ps-3">
-          <li>Mewujudkan siswa yang berakhlak mulia, berprestasi, dan berwawasan global.</li>
-          <li>Menjadi sekolah unggulan yang menghasilkan lulusan berkualitas dan berdaya saing tinggi.</li>
-          <li>Menjadi sekolah yang mampu menciptakan lingkungan belajar yang kondusif dan inovatif.</li>
-        </ol>
+        <blockquote class="blockquote">
+          <q>Cerdas dalam Berfikir, Jujur dalam Bertindak dan Santun dalam Bersikap</q>
+        </blockquote>
       </div>
       <div class="col-12 col-sm pe-sm-0">
         <div>MISI Sekolah</div>
         <ol class="mb-0 ps-3">
-          <li>Meningkatkan kualitas pendidikan dengan mengembangkan kurikulum yang relevan dengan kebutuhan dunia kerja.</li>
-          <li>Meningkatkan kualitas sumber daya manusia melalui pelatihan dan pengembangan kompetensi guru.</li>
-          <li>Meningkatkan kualitas sarana dan prasarana pendidikan untuk mendukung proses pembelajaran yang efektif.</li>
-          <li>Meningkatkan kualitas pelayanan pendidikan dengan memperhatikan kebutuhan siswa, orang tua, dan masyarakat sekitar.</li>
+          <li>Mengembangkan sistem pendidikan yang berorientasi kepada peserta didik, agar peserta didik dapat lebih kreatif, inovatif dan mampu bereksplorasi dengan di dasarkan nilai-nilai agama.</li>
+          <li>Memotivasi peserta didik agar membekali diri dengan iman, ilmu dan amal serta ketrampilan.</li>
+          <li>Membentuk peserta didik agar memiliki keunggulan kompetitif pada aspek keberanian dan budaya santun serta jujur dalam bertindak, kemandirian bersikap dan pencapaian prestasi akademik yang unggul.</li>
+          <li>Menerapkan tradisi keunggulan agar dapat menguasai ketrampilan (skill) dan pengetahuan (knowledge) untuk mewujudkan masa depan cemerlang.</li>
         </ol>
       </div>
     </div>

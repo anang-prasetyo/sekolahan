@@ -1,7 +1,7 @@
 <template>
   <footer class="mt-5 bg-primaryku text-white">
-    <div class="container pt-5 pb-2">
-      <div class="text-end px-3">
+    <div class="container pb-2">
+      <div class="text-center text-sm-end px-3 py-3 mb-3">
         <div class="d-inline-flex align-items-center gap-2" @click="naik()" style="cursor: pointer;">
           <i class="bi bi-arrow-up-square fs-3"></i> kembali ke atas
         </div>

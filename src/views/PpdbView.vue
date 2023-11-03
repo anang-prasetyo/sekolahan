@@ -1,7 +1,7 @@
 <template>
   <main>
     <section class="container mt-2">
-      <section class="mt-3 px-3 px-sm-0">
+      <section class="mt-3 px-2 px-sm-0">
         <div class="row m-0 row-gap-2">
           <div class="col-12 col-sm-6 px-0 px-sm-2 ps-sm-0 py-5 d-flex flex-column gap-3">
             <div class="display-5 fw-light text-capitalize"><span class="fw-bold text-primaryku-shades-10">promo spesial</span> HUT ke-1 {{profilSekolah.nama}}</div>
@@ -27,14 +27,14 @@
             </div>
           </div>
           <div class="col-12 col-sm-6 px-0 px-sm-2 d-flex justify-content-center align-items-center">
-            <div class="project-thumb" style="background: transparent; height: 20rem;">
-              <img  src="../assets/img/Asset 2.png">
+            <div class="" style="max-width: 20rem;">
+              <img  src="../assets/img/Asset 2.png" class="img-fluid">
             </div>
           </div>
         </div>
       </section>
 
-      <section class="mt-5 px-3 px-sm-0">
+      <section class="mt-5 px-2 px-sm-0">
         <div class="fs-3 fw-light text-capitalize"><span class="fw-bold text-uppercase">syarat</span> & <span class="fw-bold text-uppercase">alur</span> pendaftaran</div>
         <div class="row m-0 row-gap-2">
           <div class="col-12 col-sm-4 px-0 px-sm-2">

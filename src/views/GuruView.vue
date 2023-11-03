@@ -7,7 +7,7 @@
           <div v-for="gs, i in dbGuruStaf" :key="i" class="col-6 col-sm-3 px-1 px-sm-2" :class="[i < jmlTampil ? '' : 'd-none']">
             <div class="d-flex flex-column">
               <div id="imgGuruStaf" class="project-thumb" style="height: 22rem;">
-                <img :src="gs.isFoto ? 'https://raw.githubusercontent.com/anang-prasetyo/sekolahan/master/src/assets/img/guru%20staff/'+gs.url+'.png' : 'src/assets/img/guru staff/Photo-Missing.png'">
+                <img :src="gs.isFoto ? 'https://raw.githubusercontent.com/anang-prasetyo/sekolahan/master/src/assets/img/guru%20staff/'+gs.url+'.png' : 'src/assets/img/guru%20staff/Photo-Missing.png'">
               </div>
               <!-- <div id="imgGuruStaf" class="bg-primaryku-shades-3" style="height: 20rem;">
               </div> -->
