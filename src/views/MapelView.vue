@@ -8,10 +8,10 @@
             <div class="border">
               <div class="project-thumb" style="height: 15rem;">
                 <!-- <img :src="'https://raw.githubusercontent.com/anang-prasetyo/sekolahan/master/src/assets/img/'+ profilSekolah.extrakulikuler[index].nama.toLowerCase() +'-kegiatan-'+ (eki+1) +'.jpg'"> -->
-                <img :src="'src/assets/img/'+m+'.jpg'" alt="">
+                <img :src="'https://raw.githubusercontent.com/anang-prasetyo/sekolahan/master/src/assets/img/'+m.url+'.jpg'" alt="">
               </div>
               <div class="px-3 py-2">
-                <div class="fw-semibold fs-4 mb-2">{{m}}</div>
+                <div class="fw-semibold fs-4 mb-2">{{m.nama}}</div>
                 <div class="fs-xs2 text-secondary overflow-elipsis">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, vel. Doloribus quasi vero in id deleniti sunt veritatis, cum, repellendus a est incidunt libero repudiandae quas eaque sequi nobis perferendis?</div>
                 <div class="row mx-0 my-2 text-center">
                   <div class="col-6 ps-0">
@@ -39,7 +39,20 @@ import { ref } from "vue";
 
 // import AstronautJSON from '../assets/animasi/up.json'
 
-const makul = ref(['Matematika', 'Bahasa Inggris', 'IPA'])
+const makul = ref([
+  {
+    nama: 'Matematika',
+    url: 'Matematika'
+  }, 
+  {
+    nama: 'Bahasa Inggris',
+    url: 'Bahasa%20Inggris'
+  }, 
+  {
+    nama: 'IPA',
+    url: 'IPA'
+  }
+])
 </script>
 
 <style>
