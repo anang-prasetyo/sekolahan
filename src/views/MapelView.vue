@@ -46,7 +46,7 @@ const makul = ref([
   }, 
   {
     nama: 'Bahasa Inggris',
-    url: 'Bahasa%20Inggris'
+    url: 'Bahasa-Inggris'
   }, 
   {
     nama: 'IPA',

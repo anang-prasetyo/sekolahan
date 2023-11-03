@@ -77,7 +77,7 @@
 
 
       <ppdb-component></ppdb-component>
-      <sambutan-component :profil-sekolah='profilSekolah' />
+      <sambutan-component :profil-sekolah='profilSekolah' :db-guru-staf='dbGuruStaf' />
       
       <section class="mt-5 px-2 px-sm-0">
         <div class="fs-3 fw-light text-capitalize"><span class="fw-bold text-uppercase">form</span> pendaftaran</div>
@@ -108,7 +108,7 @@ import SambutanComponent from '../components/SambutanComponent.vue'
 import { onMounted, ref, watch } from "vue";
 import { konversiDate } from "../databases/fungsi";
 
-const { profilSekolah, dbPpdb } = useDatabase()
+const { profilSekolah, dbPpdb, dbGuruStaf } = useDatabase()
 const { _day, _jam, compare } = konversiDate()
 const dbPpdbSorted = ref(null)
 

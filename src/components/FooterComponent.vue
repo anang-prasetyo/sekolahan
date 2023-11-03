@@ -1,6 +1,11 @@
 <template>
   <footer class="mt-5 bg-primaryku text-white">
     <div class="container pt-5 pb-2">
+      <div class="text-end px-3">
+        <div class="d-inline-flex align-items-center gap-2" @click="naik()" style="cursor: pointer;">
+          <i class="bi bi-arrow-up-square fs-3"></i> kembali ke atas
+        </div>
+      </div>
       <div class="row m-0 d-flex align-items-center row-gap-4">
         <div class="col-12 col-sm-4 d-flex flex-column gap-2 fs-xs2 align-items-center align-items-sm-start text-center text-sm-start">
           <div class="" style="height: 10rem; width: 10rem;">
@@ -48,6 +53,9 @@
 defineProps({
   profilSekolah: Object
 })
+const naik = () => {
+  window.scrollTo(0,0);
+}
 </script>
 
 <style>

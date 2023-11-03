@@ -14,8 +14,8 @@
       </div>
       <div class="col-10 col-sm-2 ps-0 px-sm-2 d-flex align-items-center order-1 order-sm-2">
         <div class="d-flex flex-column">
-          <div id="imgSambutan" class="project-thumb" style="height: 15rem;">
-            <img :src="'src/assets/img/guru staff/'+profilSekolah.kepalaSekolah+'.png'">
+          <div v-if="kepalaSekolahOnly" id="imgSambutan" class="project-thumb" style="height: 15rem;">
+            <img :src="'https://raw.githubusercontent.com/anang-prasetyo/sekolahan/master/src/assets/img/guru%20staff/'+kepalaSekolahOnly.url+'.png'">
           </div>
           <div class="bg-primaryku-shades-1 d-flex flex-column justify-content-center p-2" style="">
             <div class="">{{profilSekolah.kepalaSekolah}}</div>
@@ -32,8 +32,22 @@
 </template>
 
 <script setup>
-defineProps({
-  profilSekolah: Object
+import { computed, ref, watch } from "vue"
+
+const props = defineProps({
+  profilSekolah: Object,
+  dbGuruStaf: Object
+})
+const dbGuruStaf = computed(() => props.dbGuruStaf)
+const kepalaSekolahOnly = ref(null)
+watch(() => {
+  if (dbGuruStaf.value){
+    for (let a=0; a<dbGuruStaf.value.length; a++){
+      if (dbGuruStaf.value[a].jabatan === 'Kepala Sekolah'){
+        kepalaSekolahOnly.value = dbGuruStaf.value[a]
+      }
+    }
+  }
 })
 </script>
 

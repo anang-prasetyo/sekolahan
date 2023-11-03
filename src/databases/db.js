@@ -68,26 +68,31 @@ export function useDatabase() {
   const dbGuruStaf = ref([
     {
       nama: 'S. Jadi, S.Pd., M.Pd.',
+      url: 'S-Jadi',
       jabatan: 'Kepala Sekolah',
       isFoto: true
     },
     {
       nama: 'Achmad Sajidan',
+      url: '',
       jabatan: 'Komite Sekolah',
       isFoto: false
     },
     {
       nama: 'Basuki Andri Susanto, S.Pd., I.',
+      url: 'Basuki-Andri-Susanto',
       jabatan: 'Waka. Kesiswaan',
       isFoto: true
     },
     {
       nama: 'Nuryati, S.Pd., M.Pd.',
+      url: 'Nuryati',
       jabatan: 'Waka. Kurikulum',
       isFoto: true
     },
     {
       nama: 'Saniatul Munawaroh, S.H.',
+      url: 'Saniatul-Munawaroh',
       jabatan: 'Guru Bimbingan Konseling',
       isFoto: true
     }
